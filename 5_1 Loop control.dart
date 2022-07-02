@@ -17,6 +17,11 @@ void main() {
   for (var i = 0; i < 4; i++) {
     print("hello from for loop");
   }
+
+  List planetList = ["Mercury", "Jupiter", "Neptune"];
+  for (var i in planetList) {
+    print("here is the planet list $i");
+  }
   var i = 0;
   //while loop -check the condition at the start
   while (i < 4) {
@@ -29,4 +34,16 @@ void main() {
     print("hello from do while loop");
     j++;
   } while (j < 4);
+  //labels and breaks
+  //the break keyword is only applicable to its nearest loop
+  //labels are used to give names for loops
+  myOuterloop:
+  for (int i = 0; i < 4; i++) {
+    for (int j = 0; j < 4; j++) {
+      if (i == 2 && j == 2) {
+        break myOuterloop;
+      }
+      print("$i $j");
+    }
+  }
 }
