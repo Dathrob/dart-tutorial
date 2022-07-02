@@ -36,7 +36,8 @@ void main() {
   } while (j < 4);
   //labels and breaks
   //the break keyword is only applicable to its nearest loop
-  //labels are used to give names for loops
+  //labels are used to give names for loops,we can also use
+  //labels together with continue keyword
   myOuterloop:
   for (int i = 0; i < 4; i++) {
     for (int j = 0; j < 4; j++) {
